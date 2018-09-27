@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use Validator;
+use App\Rules\ClassExists;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
