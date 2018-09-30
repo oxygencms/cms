@@ -14,9 +14,8 @@ return [
     |
     */
     'bind_js_vars_to_this_view' => [
-        'partials.javascript',
-        'admin.partials.javascript',
-        'venue_admin.partials.javascript',
+        'oxygencms::partials.javascript',
+        'oxygencms::admin.partials.javascript',
     ],
 
     /*

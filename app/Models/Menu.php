@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Traits\MenuMutators;
+use Oxygencms\Core\Models\Model;
 
 class Menu extends Model
 {

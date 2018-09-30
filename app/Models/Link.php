@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Traits\MenuMutators;
+use Oxygencms\Core\Models\Model;
 use App\Interfaces\RouteNamePrefixes;
 use Spatie\Translatable\HasTranslations;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('oxygencms::layouts.app')
 
 @section('title', 'Register')
 

@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Oxygencms\Core\Models\Model;
 use Spatie\Translatable\HasTranslations;
 
 class Phrase extends Model

@@ -1,4 +1,4 @@
-@extends('admin.layout')
+@extends('oxygencms::admin.layout')
 
 @section('title', 'Edit Permission')
 

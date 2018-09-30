@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Traits\HasUploads;
+use Oxygencms\Core\Models\Model;
 use Spatie\Translatable\HasTranslations;
 
 class Block extends Model

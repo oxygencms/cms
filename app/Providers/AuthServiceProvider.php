@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
 class AuthServiceProvider extends ServiceProvider
@@ -31,18 +30,18 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPolicies();
-
-        Gate::define('access-backoffice', function ($user) {
-
-            if ($user->superuser) {
-                return true;
-            }
-
-            if ($user->can('manage_back_office') || $user->hasRole('observer')) {
-                return true;
-            }
-
-            return false;
-        });
+//
+//        Gate::define('access-backoffice', function ($user) {
+//
+//            if ($user->superuser) {
+//                return true;
+//            }
+//
+//            if ($user->can('manage_back_office') || $user->hasRole('observer')) {
+//                return true;
+//            }
+//
+//            return false;
+//        });
     }
 }

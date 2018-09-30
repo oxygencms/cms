@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Traits\HasUploads;
+use Oxygencms\Core\Models\Model;
 use Illuminate\Support\Facades\File;
 use Spatie\Translatable\HasTranslations;
 use Illuminate\Database\Eloquent\Builder;

@@ -3,6 +3,7 @@
 namespace App\Policies;
 
 use App\Models\User;
+use Oxygencms\Core\Policies\BasePolicy;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
 class RolePolicy extends BasePolicy

@@ -1,4 +1,4 @@
-@extends("layouts.$page->layout")
+@extends("oxygencms::layouts.$page->layout")
 
 @section('title', $page->title)
 

@@ -1,1 +1,0 @@
-<!-- here we spit some javascript from PHP controllers via the JavaScript facade -->

@@ -15,7 +15,7 @@
 Auth::routes();
 
 // Set Locale
-Route::get('lang/{lang}', 'LanguageController@setLocale')->name('language');
+//Route::get('lang/{lang}', 'LanguageController@setLocale')->name('language');
 
 // Social Login
 Route::get('social/{provider}', 'Auth\AuthController@redirectToProvider');
