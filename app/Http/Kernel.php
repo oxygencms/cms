@@ -2,10 +2,6 @@
 
 namespace App\Http;
 
-use App\Http\Middleware\BackOfficeAccess;
-use App\Http\Middleware\IntendedUrl;
-use App\Http\Middleware\SetLocale;
-use App\Http\Middleware\UserResource;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -64,10 +60,6 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-        'role' => \Spatie\Permission\Middlewares\RoleMiddleware::class,
-        'permission' => \Spatie\Permission\Middlewares\PermissionMiddleware::class,
-//        'admin' => BackOfficeAccess::class,
-        'personal' => UserResource::class,
     ];
 
     /**

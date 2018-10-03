@@ -2,9 +2,6 @@
 
 namespace App\Providers;
 
-use App\Events\WebRoutesRegistered;
-use Validator;
-//use App\Rules\ClassExists;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
@@ -33,10 +30,6 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
-
-//        $this->bindModelName();
-
         parent::boot();
     }
 
@@ -99,23 +92,4 @@ class RouteServiceProvider extends ServiceProvider
              ->namespace($this->namespace)
              ->group(base_path('routes/api.php'));
     }
-//
-//    /**
-//     * Bind the {model_name} to retrieve a model instance.
-//     *
-//     * @return void
-//     */
-//    protected function bindModelName(): void
-//    {
-//        Route::bind('model_name', function ($model_name) {
-//
-//            $class = app()->getNamespace() . 'Models\\' . $model_name;
-//
-//            Validator::make(['class' => $class], [
-//                'class' => ['required', 'string', new ClassExists()],
-//            ])->validate();
-//
-//            return new $class;
-//        });
-//    }
 }

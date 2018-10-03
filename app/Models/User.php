@@ -2,43 +2,9 @@
 
 namespace App\Models;
 
-use App\Traits\HasUploads;
-use Spatie\Permission\Traits\HasRoles;
-use Illuminate\Notifications\Notifiable;
-use Oxygencms\Core\Traits\CommonQueries;
-use Oxygencms\Core\Traits\CommonAccessors;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Oxygencms\Users\Models\User as OxyUser;
 
-class User extends Authenticatable
+class User extends OxyUser
 {
-    use Notifiable, HasRoles, HasUploads, CommonQueries, CommonAccessors;
-
-    protected $guard_name = 'web';
-
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'email', 'phone', 'password', 'active',
-    ];
-
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
-
-    /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne
-     */
-    public function socialLogin()
-    {
-        return $this->hasOne(SocialLogin::class);
-    }
+    //
 }

@@ -8,7 +8,7 @@ return [
     'model_paths' => [
         '/app',
         '/app/Models/*',
-        // '/also/search/this/directory',
+        '/vendor/oxygencms/menus/src/Models/*',
         // '/also/search/this/directory/recursively/*',
     ],
 

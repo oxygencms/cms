@@ -82,28 +82,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Locales List
-    |--------------------------------------------------------------------------
-    |
-    | List of all application locales and their county names as values. These
-    | are used to localize page routes, translate model attributes and
-    | validation messages. When adding new locale to this array
-    | you also need to provide it's translation files.
-    |
-    */
-
-    'locales' => [
-
-        'en' => 'English',
-
-        //        'bg' => 'Бъларски',
-
-        'nl' => 'Dutch',
-
-    ],
-
-    /*
-    |--------------------------------------------------------------------------
     | Application Fallback Locale
     |--------------------------------------------------------------------------
     |
@@ -166,7 +144,7 @@ return [
         Illuminate\Auth\Passwords\PasswordResetServiceProvider::class,
         Illuminate\Session\SessionServiceProvider::class,
 //        Illuminate\Translation\TranslationServiceProvider::class,
-        App\Providers\PhraseServiceProvider::class,
+        Oxygencms\Phrases\PhraseServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
@@ -182,10 +160,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        \Oxygencms\Pages\RouteServiceProvider::class,
-        App\Providers\MenuServiceProvider::class,
-        App\Providers\BlockServiceProvider::class,
-
+//        App\Providers\PageServiceProvider::class,
     ],
 
     /*
@@ -234,9 +209,6 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
-        'Menus' => \App\Facades\Menu::class,
-
     ],
 
 ];
