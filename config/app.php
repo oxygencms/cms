@@ -182,7 +182,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        App\Providers\PageServiceProvider::class,
+        \Oxygencms\Pages\RouteServiceProvider::class,
         App\Providers\MenuServiceProvider::class,
         App\Providers\BlockServiceProvider::class,
 

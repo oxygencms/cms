@@ -1,4 +1,4 @@
-@extends('oxygencms::layouts.app')
+@extends("oxygencms::layouts.app")
 
 @section('title', 'Login')
 

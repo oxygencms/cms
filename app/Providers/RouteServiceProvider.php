@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Events\WebRoutesRegistered;
 use Validator;
 //use App\Rules\ClassExists;
 use Illuminate\Support\Facades\Route;

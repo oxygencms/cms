@@ -87,7 +87,7 @@ class MenusTableSeeder extends Seeder
 
         // seed some test menus with links
         if (env('DB_TEST_DATA')) {
-            factory(Menu::class, 23)->create()->each(function ($menu) {
+            factory(Menu::class, 5)->create()->each(function ($menu) {
                 $menu->links()->saveMany(factory('App\Models\Link', 3)->make());
             });
         }
