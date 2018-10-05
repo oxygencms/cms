@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "847d8c84144067050054b04b44ac4c99",
+    "content-hash": "6e4b703dd1ab380f3bd3fa4ad4d98ffe",
     "packages": [
         {
             "name": "codezero/laravel-unique-translation",
@@ -1688,16 +1688,16 @@
         },
         {
             "name": "oxygencms/blocks",
-            "version": "v0.2",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oxygencms/blocks.git",
-                "reference": "4a2fc62f1c4c21f8ff4d4e7a8d2d6b83f72a4334"
+                "reference": "4c02de249eedc6442cc328712abaf63861df8e4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/blocks/zipball/4a2fc62f1c4c21f8ff4d4e7a8d2d6b83f72a4334",
-                "reference": "4a2fc62f1c4c21f8ff4d4e7a8d2d6b83f72a4334",
+                "url": "https://api.github.com/repos/oxygencms/blocks/zipball/4c02de249eedc6442cc328712abaf63861df8e4f",
+                "reference": "4c02de249eedc6442cc328712abaf63861df8e4f",
                 "shasum": ""
             },
             "type": "library",
@@ -1728,7 +1728,7 @@
                 }
             ],
             "description": "Oxygen CMS blocks package.",
-            "time": "2018-10-05T09:53:50+00:00"
+            "time": "2018-10-05T12:02:56+00:00"
         },
         {
             "name": "oxygencms/commands",
@@ -1831,16 +1831,16 @@
         },
         {
             "name": "oxygencms/menus",
-            "version": "v0.2",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oxygencms/menus.git",
-                "reference": "09cbddb3f15ec687620f2b2f452dcd2beb659680"
+                "reference": "39b02583998e9fc35610dc1a8b9783dd9afd04cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/menus/zipball/09cbddb3f15ec687620f2b2f452dcd2beb659680",
-                "reference": "09cbddb3f15ec687620f2b2f452dcd2beb659680",
+                "url": "https://api.github.com/repos/oxygencms/menus/zipball/39b02583998e9fc35610dc1a8b9783dd9afd04cf",
+                "reference": "39b02583998e9fc35610dc1a8b9783dd9afd04cf",
                 "shasum": ""
             },
             "type": "library",
@@ -1874,20 +1874,20 @@
                 }
             ],
             "description": "Oxygen CMS menus package.",
-            "time": "2018-10-05T09:55:56+00:00"
+            "time": "2018-10-05T12:03:38+00:00"
         },
         {
             "name": "oxygencms/pages",
-            "version": "v0.2",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oxygencms/pages.git",
-                "reference": "51802fbf135584fe2b856f88d3453bd310b641fc"
+                "reference": "eca0de7305b44538d4bed5f51625b4dfa9e53bf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/pages/zipball/51802fbf135584fe2b856f88d3453bd310b641fc",
-                "reference": "51802fbf135584fe2b856f88d3453bd310b641fc",
+                "url": "https://api.github.com/repos/oxygencms/pages/zipball/eca0de7305b44538d4bed5f51625b4dfa9e53bf6",
+                "reference": "eca0de7305b44538d4bed5f51625b4dfa9e53bf6",
                 "shasum": ""
             },
             "require": {
@@ -1917,20 +1917,20 @@
                 }
             ],
             "description": "Oxygen CMS pages package.",
-            "time": "2018-10-05T09:58:01+00:00"
+            "time": "2018-10-05T12:04:43+00:00"
         },
         {
             "name": "oxygencms/phrases",
-            "version": "v0.2",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oxygencms/phrases.git",
-                "reference": "8e7dd25b4e52a6e619ddd2b3c47a8158af91d321"
+                "reference": "5fe322d278a2d7c196508f470ce4d9bb4d03af35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/phrases/zipball/8e7dd25b4e52a6e619ddd2b3c47a8158af91d321",
-                "reference": "8e7dd25b4e52a6e619ddd2b3c47a8158af91d321",
+                "url": "https://api.github.com/repos/oxygencms/phrases/zipball/5fe322d278a2d7c196508f470ce4d9bb4d03af35",
+                "reference": "5fe322d278a2d7c196508f470ce4d9bb4d03af35",
                 "shasum": ""
             },
             "type": "library",
@@ -1961,7 +1961,7 @@
                 }
             ],
             "description": "Oxygen CMS phrases package.",
-            "time": "2018-10-05T09:58:19+00:00"
+            "time": "2018-10-05T12:05:02+00:00"
         },
         {
             "name": "oxygencms/uploads",
@@ -2008,16 +2008,16 @@
         },
         {
             "name": "oxygencms/users",
-            "version": "v0.2",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oxygencms/users.git",
-                "reference": "91a4c6d5c7de01a474ab17986638d898f4a96032"
+                "reference": "8668de912182f2a8b94ce77b262adf96e119fb90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/users/zipball/91a4c6d5c7de01a474ab17986638d898f4a96032",
-                "reference": "91a4c6d5c7de01a474ab17986638d898f4a96032",
+                "url": "https://api.github.com/repos/oxygencms/users/zipball/8668de912182f2a8b94ce77b262adf96e119fb90",
+                "reference": "8668de912182f2a8b94ce77b262adf96e119fb90",
                 "shasum": ""
             },
             "require": {
@@ -2053,7 +2053,7 @@
                 }
             ],
             "description": "Oxygen CMS users, roles and permissions package.",
-            "time": "2018-10-05T10:02:26+00:00"
+            "time": "2018-10-05T12:05:31+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -6445,7 +6445,14 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "oxygencms/core": 20
+        "oxygencms/core": 20,
+        "oxygencms/blocks": 20,
+        "oxygencms/commands": 20,
+        "oxygencms/menus": 20,
+        "oxygencms/pages": 20,
+        "oxygencms/phrases": 20,
+        "oxygencms/uploads": 20,
+        "oxygencms/users": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
