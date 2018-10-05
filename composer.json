@@ -63,7 +63,8 @@
             "@php artisan vendor:publish --provider='Oxygencms\\Phrases\\PhraseServiceProvider'",
             "@php artisan vendor:publish --provider='Oxygencms\\Blocks\\BlockServiceProvider'",
             "@php artisan vendor:publish --provider='Oxygencms\\Menus\\MenuServiceProvider'",
-            "@php artisan vendor:publish --provider='Oxygencms\\Uploads\\UploadServiceProvider'"
+            "@php artisan vendor:publish --provider='Oxygencms\\Uploads\\UploadServiceProvider'",
+            "composer dumpautoload"
         ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
