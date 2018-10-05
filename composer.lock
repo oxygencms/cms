@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "847d8c84144067050054b04b44ac4c99",
+    "content-hash": "35dca374827dd3127591d772837a0687",
     "packages": [
         {
             "name": "codezero/laravel-unique-translation",
@@ -969,16 +969,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.7.7",
+            "version": "v5.7.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "0438455128c0850b5872c7f3c11b7ccdbbfcba3e"
+                "reference": "763b64a43ebb6042e463aab4214d4cc9722147be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/0438455128c0850b5872c7f3c11b7ccdbbfcba3e",
-                "reference": "0438455128c0850b5872c7f3c11b7ccdbbfcba3e",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/763b64a43ebb6042e463aab4214d4cc9722147be",
+                "reference": "763b64a43ebb6042e463aab4214d4cc9722147be",
                 "shasum": ""
             },
             "require": {
@@ -1107,7 +1107,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-10-02T14:12:00+00:00"
+            "time": "2018-10-04T14:47:20+00:00"
         },
         {
             "name": "laravel/socialite",
@@ -1688,17 +1688,12 @@
         },
         {
             "name": "oxygencms/blocks",
-            "version": "v0.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oxygencms/blocks.git",
-                "reference": "5bd4b0a137d78b4dab0c052d591646c27b68f199"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/blocks/zipball/5bd4b0a137d78b4dab0c052d591646c27b68f199",
+                "type": "path",
+                "url": "/Users/martin/dev/oxygen/cms/oxygencms/blocks",
                 "reference": "5bd4b0a137d78b4dab0c052d591646c27b68f199",
-                "shasum": ""
+                "shasum": null
             },
             "type": "library",
             "extra": {
@@ -1713,7 +1708,6 @@
                     "Oxygencms\\Blocks\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1721,24 +1715,22 @@
                 {
                     "name": "Pavel Pavlov",
                     "email": "pavlovp@icloud.com"
+                },
+                {
+                    "name": "Martin Blagoev",
+                    "email": "mb.reppair@gmail.com"
                 }
             ],
-            "description": "Oxy blocks",
-            "time": "2018-10-02T11:41:55+00:00"
+            "description": "Oxy blocks"
         },
         {
             "name": "oxygencms/commands",
-            "version": "v0.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oxygencms/commands.git",
-                "reference": "71cb38355db1fe3f3747c834781d0e2f4430ba24"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/commands/zipball/71cb38355db1fe3f3747c834781d0e2f4430ba24",
+                "type": "path",
+                "url": "/Users/martin/dev/oxygen/cms/oxygencms/commands",
                 "reference": "71cb38355db1fe3f3747c834781d0e2f4430ba24",
-                "shasum": ""
+                "shasum": null
             },
             "require": {
                 "php": ">=7.0"
@@ -1756,7 +1748,6 @@
                     "Oxygencms\\Commands\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1766,29 +1757,16 @@
                     "email": "pavlovp@icloud.com"
                 }
             ],
-            "description": "Oxygen cms crud commands",
-            "time": "2018-10-01T14:51:57+00:00"
+            "description": "Oxygen cms crud commands"
         },
         {
             "name": "oxygencms/core",
-            "version": "v0.1.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oxygencms/core.git",
-                "reference": "16257b790c4998126b7fba9b575c3dc4c3f4198a"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/core/zipball/16257b790c4998126b7fba9b575c3dc4c3f4198a",
-                "reference": "16257b790c4998126b7fba9b575c3dc4c3f4198a",
-                "shasum": ""
-            },
-            "require": {
-                "oxygencms/blocks": "@dev",
-                "oxygencms/commands": "@dev",
-                "oxygencms/menus": "@dev",
-                "oxygencms/pages": "@dev",
-                "oxygencms/users": "@dev"
+                "type": "path",
+                "url": "/Users/martin/dev/oxygen/cms/oxygencms/core",
+                "reference": "3076289d06a370b5d3f3b463bd0493cf374e9f6d",
+                "shasum": null
             },
             "type": "library",
             "extra": {
@@ -1803,10 +1781,9 @@
                     "Oxygencms\\Core\\": "src/"
                 },
                 "files": [
-                    "src/helpers.php"
+                    "helpers.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1814,24 +1791,22 @@
                 {
                     "name": "Pavel Pavlov",
                     "email": "pavlovp@icloud.com"
+                },
+                {
+                    "name": "Martin Blagoev",
+                    "email": "mb.reppair@gmail.com"
                 }
             ],
-            "description": "Oxy admin core",
-            "time": "2018-10-03T15:07:16+00:00"
+            "description": "Oxy admin core"
         },
         {
             "name": "oxygencms/menus",
-            "version": "v0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oxygencms/menus.git",
-                "reference": "459035749c92bd34fec2001875377d73c38a144e"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/menus/zipball/459035749c92bd34fec2001875377d73c38a144e",
-                "reference": "459035749c92bd34fec2001875377d73c38a144e",
-                "shasum": ""
+                "type": "path",
+                "url": "/Users/martin/dev/oxygen/cms/oxygencms/menus",
+                "reference": "19f9f3b1f54ceef08c3f3c893e6a9fbc6801a180",
+                "shasum": null
             },
             "type": "library",
             "extra": {
@@ -1846,11 +1821,9 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Oxygencms\\Menus\\": "src/",
-                    "Oxygencms\\Menus\\Database\\Seeds\\": "database/seeds/"
+                    "Oxygencms\\Menus\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1858,24 +1831,22 @@
                 {
                     "name": "Pavel Pavlov",
                     "email": "pavlovp@icloud.com"
+                },
+                {
+                    "name": "Martin Blagoev",
+                    "email": "mb.reppair@gmail.com"
                 }
             ],
-            "description": "Oxy menus",
-            "time": "2018-10-03T15:42:58+00:00"
+            "description": "Oxy menus"
         },
         {
             "name": "oxygencms/pages",
-            "version": "v0.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oxygencms/pages.git",
-                "reference": "9b5e95992a704c59bff341cd8bf89771853bf9f0"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/pages/zipball/9b5e95992a704c59bff341cd8bf89771853bf9f0",
+                "type": "path",
+                "url": "/Users/martin/dev/oxygen/cms/oxygencms/pages",
                 "reference": "9b5e95992a704c59bff341cd8bf89771853bf9f0",
-                "shasum": ""
+                "shasum": null
             },
             "require": {
                 "php": ">=7.0"
@@ -1884,7 +1855,7 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Oxygencms\\Pages\\PagesServiceProvider"
+                        "Oxygencms\\Pages\\PageServiceProvider"
                     ]
                 }
             },
@@ -1893,7 +1864,83 @@
                     "Oxygencms\\Pages\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Blagoev",
+                    "email": "mb.reppair@gmail.com"
+                },
+                {
+                    "name": "Martin Blagoev",
+                    "email": "mb.reppair@gmail.com"
+                }
+            ],
+            "description": "Oxygen cms crud commands"
+        },
+        {
+            "name": "oxygencms/phrases",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "/Users/martin/dev/oxygen/cms/oxygencms/phrases",
+                "reference": "2d56a743c547905a9d2287ee08fa7b21b8a0976c",
+                "shasum": null
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Oxygencms\\Phrases\\PhraseServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Oxygencms\\Phrases\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavel Pavlov",
+                    "email": "pavlovp@icloud.com"
+                },
+                {
+                    "name": "Martin Blagoev",
+                    "email": "mb.reppair@gmail.com"
+                }
+            ],
+            "description": "Oxy phrases"
+        },
+        {
+            "name": "oxygencms/uploads",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "/Users/martin/dev/oxygen/cms/oxygencms/uploads",
+                "reference": "49c669f6ab020c82c9be1789fb61c1b54bba2d9d",
+                "shasum": null
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Oxygencms\\Uploads\\UploadServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Oxygencms\\Uploads\\": "src/"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -1903,22 +1950,16 @@
                     "email": "mb.reppair@gmail.com"
                 }
             ],
-            "description": "Oxygen cms crud commands",
-            "time": "2018-10-03T14:34:52+00:00"
+            "description": "Oxygen cms crud commands"
         },
         {
             "name": "oxygencms/users",
-            "version": "v0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oxygencms/users.git",
-                "reference": "06a78098a2ccb7e7da81144f682cacc3a4385394"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/users/zipball/06a78098a2ccb7e7da81144f682cacc3a4385394",
+                "type": "path",
+                "url": "/Users/martin/dev/oxygen/cms/oxygencms/users",
                 "reference": "06a78098a2ccb7e7da81144f682cacc3a4385394",
-                "shasum": ""
+                "shasum": null
             },
             "require": {
                 "laracasts/utilities": "^3.0",
@@ -1938,7 +1979,6 @@
                     "Oxygencms\\Users\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1946,10 +1986,13 @@
                 {
                     "name": "Pavel Pavlov",
                     "email": "pavlovp@icloud.com"
+                },
+                {
+                    "name": "Martin Blagoev",
+                    "email": "mb.reppair@gmail.com"
                 }
             ],
-            "description": "Oxy users",
-            "time": "2018-10-01T14:22:55+00:00"
+            "description": "Oxy users"
         },
         {
             "name": "paragonie/random_compat",
@@ -5459,16 +5502,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.3.5",
+            "version": "7.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "7b331efabbb628c518c408fdfcaf571156775de2"
+                "reference": "f3837fa1e07758057ae06e8ddec6d06ba183f126"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7b331efabbb628c518c408fdfcaf571156775de2",
-                "reference": "7b331efabbb628c518c408fdfcaf571156775de2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f3837fa1e07758057ae06e8ddec6d06ba183f126",
+                "reference": "f3837fa1e07758057ae06e8ddec6d06ba183f126",
                 "shasum": ""
             },
             "require": {
@@ -5493,7 +5536,7 @@
                 "sebastian/exporter": "^3.1",
                 "sebastian/global-state": "^2.0",
                 "sebastian/object-enumerator": "^3.0.3",
-                "sebastian/resource-operations": "^1.0",
+                "sebastian/resource-operations": "^2.0",
                 "sebastian/version": "^2.0.1"
             },
             "conflict": {
@@ -5513,7 +5556,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.3-dev"
+                    "dev-master": "7.4-dev"
                 }
             },
             "autoload": {
@@ -5539,7 +5582,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-09-08T15:14:29+00:00"
+            "time": "2018-10-05T04:05:24+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -6021,25 +6064,25 @@
         },
         {
             "name": "sebastian/resource-operations",
-            "version": "1.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/resource-operations.git",
-                "reference": "ce990bb21759f94aeafd30209e8cfcdfa8bc3f52"
+                "reference": "4d7a795d35b889bf80a0cc04e08d77cedfa917a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/resource-operations/zipball/ce990bb21759f94aeafd30209e8cfcdfa8bc3f52",
-                "reference": "ce990bb21759f94aeafd30209e8cfcdfa8bc3f52",
+                "url": "https://api.github.com/repos/sebastianbergmann/resource-operations/zipball/4d7a795d35b889bf80a0cc04e08d77cedfa917a9",
+                "reference": "4d7a795d35b889bf80a0cc04e08d77cedfa917a9",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6.0"
+                "php": "^7.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -6059,7 +6102,7 @@
             ],
             "description": "Provides a list of PHP built-in functions that operate on resources",
             "homepage": "https://www.github.com/sebastianbergmann/resource-operations",
-            "time": "2015-07-28T20:34:47+00:00"
+            "time": "2018-10-04T04:07:39+00:00"
         },
         {
             "name": "sebastian/version",
@@ -6341,7 +6384,14 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "oxygencms/core": 20
+        "oxygencms/blocks": 20,
+        "oxygencms/commands": 20,
+        "oxygencms/core": 20,
+        "oxygencms/menus": 20,
+        "oxygencms/pages": 20,
+        "oxygencms/phrases": 20,
+        "oxygencms/uploads": 20,
+        "oxygencms/users": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

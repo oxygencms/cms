@@ -14,10 +14,7 @@ const mix = require('laravel-mix');
 // Front
 mix.js('resources/js/app.js', 'js')
     .sass('resources/scss/app.scss', 'css');
-    // .sourceMaps()
-    // .webpackConfig({ devtool: "inline-source-map" }); //Fix for source maps;
 
 // Back Office
 mix.js('resources/js/admin/admin.js', 'js')
     .sass('resources/scss/admin/admin.scss', 'css');
-    // .sourceMaps();
