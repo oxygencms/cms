@@ -21,7 +21,6 @@
         "@fortawesome/fontawesome-free": "^5.2.0",
         "chart.js": "^2.7.2",
         "dropzone": "^5.5.1",
-        "moment": "^2.18.1",
         "vue-chartjs": "^3.4.0",
         "vue-good-table": "^2.12.2",
         "vue-notification": "^1.3.12",
