@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4811cbc1a58b6c034e8731c38d2c14d",
+    "content-hash": "5e07f644c1c5adcb31a47de632d6aa77",
     "packages": [
         {
             "name": "codezero/laravel-unique-translation",
@@ -1689,17 +1689,12 @@
         },
         {
             "name": "oxygencms/blocks",
-            "version": "v0.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oxygencms/blocks.git",
-                "reference": "4c02de249eedc6442cc328712abaf63861df8e4f"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/blocks/zipball/4c02de249eedc6442cc328712abaf63861df8e4f",
+                "type": "path",
+                "url": "./oxygencms/blocks",
                 "reference": "4c02de249eedc6442cc328712abaf63861df8e4f",
-                "shasum": ""
+                "shasum": null
             },
             "type": "library",
             "extra": {
@@ -1714,36 +1709,29 @@
                     "Oxygencms\\Blocks\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Martin Blagoev",
-                    "email": "mb.reppair@gmail.com"
-                },
-                {
                     "name": "Pavel Pavlov",
                     "email": "pavlovp@icloud.com"
+                },
+                {
+                    "name": "Martin Blagoev",
+                    "email": "mb.reppair@gmail.com"
                 }
             ],
-            "description": "Oxygen CMS blocks package.",
-            "time": "2018-10-05T12:02:56+00:00"
+            "description": "Oxygen CMS blocks package."
         },
         {
             "name": "oxygencms/commands",
-            "version": "v0.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oxygencms/commands.git",
-                "reference": "1dc0d0c5936ede5e30c1e3a440f4f2dba757e935"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/commands/zipball/1dc0d0c5936ede5e30c1e3a440f4f2dba757e935",
-                "reference": "1dc0d0c5936ede5e30c1e3a440f4f2dba757e935",
-                "shasum": ""
+                "type": "path",
+                "url": "./oxygencms/commands",
+                "reference": "71cb38355db1fe3f3747c834781d0e2f4430ba24",
+                "shasum": null
             },
             "require": {
                 "php": ">=7.0"
@@ -1761,7 +1749,6 @@
                     "Oxygencms\\Commands\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1771,22 +1758,16 @@
                     "email": "pavlovp@icloud.com"
                 }
             ],
-            "description": "Oxygen cms crud commands",
-            "time": "2018-10-11T15:27:52+00:00"
+            "description": "Oxygen cms crud commands"
         },
         {
             "name": "oxygencms/core",
-            "version": "v0.2.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oxygencms/core.git",
-                "reference": "773204c0ec06d7d7ce072169e044c8229702d318"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/core/zipball/773204c0ec06d7d7ce072169e044c8229702d318",
+                "type": "path",
+                "url": "./oxygencms/core",
                 "reference": "773204c0ec06d7d7ce072169e044c8229702d318",
-                "shasum": ""
+                "shasum": null
             },
             "type": "library",
             "extra": {
@@ -1804,36 +1785,29 @@
                     "helpers.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Martin Blagoev",
-                    "email": "mb.reppair@gmail.com"
-                },
-                {
                     "name": "Pavel Pavlov",
                     "email": "pavlovp@icloud.com"
+                },
+                {
+                    "name": "Martin Blagoev",
+                    "email": "mb.reppair@gmail.com"
                 }
             ],
-            "description": "Oxygen CMS core package.",
-            "time": "2018-10-29T16:32:16+00:00"
+            "description": "Oxygen CMS core package."
         },
         {
             "name": "oxygencms/menus",
-            "version": "v0.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oxygencms/menus.git",
-                "reference": "a16674adcd7e1e96d88148c6c8301851a2df4d25"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/menus/zipball/a16674adcd7e1e96d88148c6c8301851a2df4d25",
+                "type": "path",
+                "url": "./oxygencms/menus",
                 "reference": "a16674adcd7e1e96d88148c6c8301851a2df4d25",
-                "shasum": ""
+                "shasum": null
             },
             "type": "library",
             "extra": {
@@ -1851,36 +1825,29 @@
                     "Oxygencms\\Menus\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Martin Blagoev",
-                    "email": "mb.reppair@gmail.com"
-                },
-                {
                     "name": "Pavel Pavlov",
                     "email": "pavlovp@icloud.com"
+                },
+                {
+                    "name": "Martin Blagoev",
+                    "email": "mb.reppair@gmail.com"
                 }
             ],
-            "description": "Oxygen CMS menus package.",
-            "time": "2018-10-10T13:48:54+00:00"
+            "description": "Oxygen CMS menus package."
         },
         {
             "name": "oxygencms/pages",
-            "version": "v0.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oxygencms/pages.git",
-                "reference": "e4de316ca4856d4389987693f4cb5a2e8ff8d5f6"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/pages/zipball/e4de316ca4856d4389987693f4cb5a2e8ff8d5f6",
-                "reference": "e4de316ca4856d4389987693f4cb5a2e8ff8d5f6",
-                "shasum": ""
+                "type": "path",
+                "url": "./oxygencms/pages",
+                "reference": "48e0692dfa80eddc6a1c0816e3fe687d5cc4631a",
+                "shasum": null
             },
             "require": {
                 "php": ">=7.0"
@@ -1898,7 +1865,6 @@
                     "Oxygencms\\Pages\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1908,26 +1874,20 @@
                     "email": "mb.reppair@gmail.com"
                 },
                 {
-                    "name": "Pavel Pavlov",
-                    "email": "pavlovp@icloud.com"
+                    "name": "Martin Blagoev",
+                    "email": "mb.reppair@gmail.com"
                 }
             ],
-            "description": "Oxygen CMS pages package.",
-            "time": "2018-10-29T12:51:46+00:00"
+            "description": "Oxygen CMS pages package."
         },
         {
             "name": "oxygencms/phrases",
-            "version": "v0.2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oxygencms/phrases.git",
-                "reference": "87d499b8ecd673aa1abc0571c27ce9cb163da6fa"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/phrases/zipball/87d499b8ecd673aa1abc0571c27ce9cb163da6fa",
+                "type": "path",
+                "url": "./oxygencms/phrases",
                 "reference": "87d499b8ecd673aa1abc0571c27ce9cb163da6fa",
-                "shasum": ""
+                "shasum": null
             },
             "type": "library",
             "extra": {
@@ -1942,36 +1902,29 @@
                     "Oxygencms\\Phrases\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Martin Blagoev",
-                    "email": "mb.reppair@gmail.com"
-                },
-                {
                     "name": "Pavel Pavlov",
                     "email": "pavlovp@icloud.com"
+                },
+                {
+                    "name": "Martin Blagoev",
+                    "email": "mb.reppair@gmail.com"
                 }
             ],
-            "description": "Oxygen CMS phrases package.",
-            "time": "2018-10-11T09:37:44+00:00"
+            "description": "Oxygen CMS phrases package."
         },
         {
             "name": "oxygencms/uploads",
-            "version": "v0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oxygencms/uploads.git",
-                "reference": "d5048befec78a01c486158977ad5aa2c3eed00a7"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/uploads/zipball/d5048befec78a01c486158977ad5aa2c3eed00a7",
+                "type": "path",
+                "url": "./oxygencms/uploads",
                 "reference": "d5048befec78a01c486158977ad5aa2c3eed00a7",
-                "shasum": ""
+                "shasum": null
             },
             "require": {
                 "php": ">=7.0"
@@ -1989,7 +1942,6 @@
                     "Oxygencms\\Uploads\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1999,22 +1951,16 @@
                     "email": "mb.reppair@gmail.com"
                 }
             ],
-            "description": "Oxygen CMS uploads package.",
-            "time": "2018-10-05T10:00:48+00:00"
+            "description": "Oxygen CMS uploads package."
         },
         {
             "name": "oxygencms/users",
-            "version": "v0.2.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/oxygencms/users.git",
-                "reference": "17f8596f7f14e75426d0dbf78521b7b60877aa0f"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/users/zipball/17f8596f7f14e75426d0dbf78521b7b60877aa0f",
+                "type": "path",
+                "url": "./oxygencms/users",
                 "reference": "17f8596f7f14e75426d0dbf78521b7b60877aa0f",
-                "shasum": ""
+                "shasum": null
             },
             "require": {
                 "laracasts/utilities": "^3.0",
@@ -2034,22 +1980,20 @@
                     "Oxygencms\\Users\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Martin Blagoev",
-                    "email": "mb.reppair@gmail.com"
-                },
-                {
                     "name": "Pavel Pavlov",
                     "email": "pavlovp@icloud.com"
+                },
+                {
+                    "name": "Martin Blagoev",
+                    "email": "mb.reppair@gmail.com"
                 }
             ],
-            "description": "Oxygen CMS users, roles and permissions package.",
-            "time": "2018-10-18T11:10:11+00:00"
+            "description": "Oxygen CMS users, roles and permissions package."
         },
         {
             "name": "paragonie/random_compat",
@@ -6440,7 +6384,16 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "oxygencms/core": 20,
+        "oxygencms/blocks": 20,
+        "oxygencms/commands": 20,
+        "oxygencms/menus": 20,
+        "oxygencms/pages": 20,
+        "oxygencms/phrases": 20,
+        "oxygencms/uploads": 20,
+        "oxygencms/users": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
