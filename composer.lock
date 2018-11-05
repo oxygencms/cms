@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "14c18db34a8dc8e202f9f5f3fe9e1a74",
+    "content-hash": "a4811cbc1a58b6c034e8731c38d2c14d",
     "packages": [
         {
             "name": "codezero/laravel-unique-translation",
