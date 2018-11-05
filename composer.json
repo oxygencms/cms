@@ -68,6 +68,7 @@
             "@php artisan vendor:publish --provider='Oxygencms\\Blocks\\BlockServiceProvider'",
             "@php artisan vendor:publish --provider='Oxygencms\\Menus\\MenuServiceProvider'",
             "@php artisan vendor:publish --provider='Oxygencms\\Uploads\\UploadServiceProvider'",
+            "@php artisan vendor:publish --provider='Spatie\\Activitylog\\ActivitylogServiceProvider' --tag='migrations'",
             "composer dumpautoload"
         ],
         "post-autoload-dump": [
