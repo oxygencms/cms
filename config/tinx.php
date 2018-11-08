@@ -14,6 +14,7 @@ return [
         '/vendor/oxygencms/phrases/src/Models/*',
         '/vendor/oxygencms/uploads/src/Models/*',
         '/vendor/oxygencms/users/src/Models/*',
+        '/vendor/spatie/laravel-activitylog/src/Models/*',
     ],
 
     /**
