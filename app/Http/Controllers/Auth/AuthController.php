@@ -58,11 +58,15 @@ class AuthController extends Controller
             return $authUser;
         }
 
-        $social_user = User::create([
-            'name'     => $user->name,
-            'email'    => $user->email,
-            'password' => Hash::make(str_random(12))
-        ]);
+        $social_user = User::where('email', $user->email)->first();
+
+        if (!$social_user) {
+            $social_user = User::create([
+                'name'     => $user->name,
+                'email'    => $user->email,
+                'password' => Hash::make(str_random(12))
+            ]);
+        }
 
         $social_user->socialLogin()->create([
             'provider' => $provider,
