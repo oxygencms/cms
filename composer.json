@@ -95,15 +95,7 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi",
-            "@php artisan vendor:publish --provider='Oxygencms\\Core\\CoreServiceProvider'",
-            "@php artisan vendor:publish --provider='Oxygencms\\Users\\UserServiceProvider'",
-            "@php artisan vendor:publish --provider='Oxygencms\\Pages\\PageServiceProvider'",
-            "@php artisan vendor:publish --provider='Oxygencms\\Phrases\\PhraseServiceProvider'",
-            "@php artisan vendor:publish --provider='Oxygencms\\Blocks\\BlockServiceProvider'",
-            "@php artisan vendor:publish --provider='Oxygencms\\Menus\\MenuServiceProvider'",
-            "@php artisan vendor:publish --provider='Oxygencms\\Uploads\\UploadServiceProvider'",
-            "@php artisan vendor:publish --provider='Spatie\\Activitylog\\ActivitylogServiceProvider' --tag='migrations'",
-            "@php artisan vendor:publish --provider='Spatie\\Activitylog\\ActivitylogServiceProvider' --tag='config'",
+            "@php artisan oxy:publish-everything",
             "composer dumpautoload"
         ],
         "post-autoload-dump": [
