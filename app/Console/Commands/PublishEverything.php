@@ -46,6 +46,7 @@ class PublishEverything extends Command
             'Oxygencms\\Menus\\MenuServiceProvider',
             'Oxygencms\\Uploads\\UploadServiceProvider',
             'Spatie\\Activitylog\\ActivitylogServiceProvider',
+            'Spatie\\MediaLibrary\\MediaLibraryServiceProvider',
         ];
 
         foreach ($providers as $provider) {
