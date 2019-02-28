@@ -14,14 +14,13 @@
         "laravel/socialite": "^3.0",
         "laravel/tinker": "^1.0",
         "orangehill/iseed": "^2.5",
-        "oxygencms/core": "0.2.*",
-        "oxygencms/blocks": "0.2.*",
+        "oxygencms/core": "0.3.*",
+        "oxygencms/blocks": "0.3.*",
         "oxygencms/commands": "0.2.*",
-        "oxygencms/menus": "0.2.*",
-        "oxygencms/pages": "0.2.*",
+        "oxygencms/menus": "0.3.*",
+        "oxygencms/pages": "0.3.*",
         "oxygencms/phrases": "0.2.*",
-        "oxygencms/uploads": "0.2.*",
-        "oxygencms/users": "0.2.*",
+        "oxygencms/users": "0.3.*",
         "predis/predis": "^1.1"
     },
     "require-dev": {
@@ -61,15 +60,7 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi",
-            "@php artisan vendor:publish --provider='Oxygencms\\Core\\CoreServiceProvider'",
-            "@php artisan vendor:publish --provider='Oxygencms\\Users\\UserServiceProvider'",
-            "@php artisan vendor:publish --provider='Oxygencms\\Pages\\PageServiceProvider'",
-            "@php artisan vendor:publish --provider='Oxygencms\\Phrases\\PhraseServiceProvider'",
-            "@php artisan vendor:publish --provider='Oxygencms\\Blocks\\BlockServiceProvider'",
-            "@php artisan vendor:publish --provider='Oxygencms\\Menus\\MenuServiceProvider'",
-            "@php artisan vendor:publish --provider='Oxygencms\\Uploads\\UploadServiceProvider'",
-            "@php artisan vendor:publish --provider='Spatie\\Activitylog\\ActivitylogServiceProvider' --tag='migrations'",
-            "@php artisan vendor:publish --provider='Spatie\\Activitylog\\ActivitylogServiceProvider' --tag='config'",
+            "@php artisan oxy:publish-everything",
             "composer dumpautoload"
         ],
         "post-autoload-dump": [
