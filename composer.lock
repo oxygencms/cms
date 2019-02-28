@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f27616b34b674808af9687a5f09aa6d",
+    "content-hash": "2c63962ef0b761b377a7eb6b8e187df8",
     "packages": [
         {
             "name": "anahkiasen/underscore-php",
@@ -2242,16 +2242,16 @@
         },
         {
             "name": "oxygencms/core",
-            "version": "v0.3.0",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oxygencms/core.git",
-                "reference": "2a37f25dc8f41ad56a8bd21bf27cbf6ac8fe8e9d"
+                "reference": "0f7c38792837ae539ea5d056bd1a56161c6cb3af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/core/zipball/2a37f25dc8f41ad56a8bd21bf27cbf6ac8fe8e9d",
-                "reference": "2a37f25dc8f41ad56a8bd21bf27cbf6ac8fe8e9d",
+                "url": "https://api.github.com/repos/oxygencms/core/zipball/0f7c38792837ae539ea5d056bd1a56161c6cb3af",
+                "reference": "0f7c38792837ae539ea5d056bd1a56161c6cb3af",
                 "shasum": ""
             },
             "require": {
@@ -2292,7 +2292,7 @@
                 }
             ],
             "description": "Oxygen CMS core package.",
-            "time": "2019-02-28T17:47:16+00:00"
+            "time": "2019-02-28T21:58:31+00:00"
         },
         {
             "name": "oxygencms/menus",
@@ -2434,16 +2434,16 @@
         },
         {
             "name": "oxygencms/users",
-            "version": "v0.3.0",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oxygencms/users.git",
-                "reference": "ca3e7b6b4852629a5dc4e9a041bcbde096202201"
+                "reference": "2b13172e598a51e2fcc9c0cdf200a6b5e618c393"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/users/zipball/ca3e7b6b4852629a5dc4e9a041bcbde096202201",
-                "reference": "ca3e7b6b4852629a5dc4e9a041bcbde096202201",
+                "url": "https://api.github.com/repos/oxygencms/users/zipball/2b13172e598a51e2fcc9c0cdf200a6b5e618c393",
+                "reference": "2b13172e598a51e2fcc9c0cdf200a6b5e618c393",
                 "shasum": ""
             },
             "require": {
@@ -2479,7 +2479,7 @@
                 }
             ],
             "description": "Oxygen CMS users, roles and permissions package.",
-            "time": "2019-02-28T17:49:44+00:00"
+            "time": "2019-02-28T22:01:53+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -7697,7 +7697,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.1.3"
+        "php": "^7.2"
     },
     "platform-dev": []
 }
