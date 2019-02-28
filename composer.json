@@ -32,10 +32,6 @@
         {
             "type": "path",
             "url": "./oxygencms/commands"
-        },
-        {
-            "type": "path",
-            "url": "./oxygencms/uploads"
         }
     ],
     "require": {
@@ -54,7 +50,6 @@
         "oxygencms/menus": "@dev",
         "oxygencms/pages": "@dev",
         "oxygencms/phrases": "@dev",
-        "oxygencms/uploads": "@dev",
         "oxygencms/users": "@dev",
         "predis/predis": "^1.1"
     },

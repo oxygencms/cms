@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fcd80ec520fff8c2de475fad171933cb",
+    "content-hash": "baa9df0b9128b71b52427ca37ee78ad4",
     "packages": [
         {
             "name": "anahkiasen/underscore-php",
@@ -2391,42 +2391,6 @@
             "description": "Oxygen CMS phrases package."
         },
         {
-            "name": "oxygencms/uploads",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "./oxygencms/uploads",
-                "reference": "56b981e52acc4ae12b29dba49f40ff814332b0a9",
-                "shasum": null
-            },
-            "require": {
-                "php": ">=7.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Oxygencms\\Uploads\\UploadServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Oxygencms\\Uploads\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Martin Blagoev",
-                    "email": "mb.reppair@gmail.com"
-                }
-            ],
-            "description": "Oxygen CMS uploads package."
-        },
-        {
             "name": "oxygencms/users",
             "version": "dev-master",
             "dist": {
@@ -3283,28 +3247,30 @@
         },
         {
             "name": "spatie/laravel-activitylog",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-activitylog.git",
-                "reference": "3c340e70cdb86f6d61de45a097fdf55dde36f5e8"
+                "reference": "8db5d2f314a26ee9a1617bdecd98947fdf29fcfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-activitylog/zipball/3c340e70cdb86f6d61de45a097fdf55dde36f5e8",
-                "reference": "3c340e70cdb86f6d61de45a097fdf55dde36f5e8",
+                "url": "https://api.github.com/repos/spatie/laravel-activitylog/zipball/8db5d2f314a26ee9a1617bdecd98947fdf29fcfa",
+                "reference": "8db5d2f314a26ee9a1617bdecd98947fdf29fcfa",
                 "shasum": ""
             },
             "require": {
-                "illuminate/config": "~5.5.0|~5.6.0|~5.7.0",
-                "illuminate/database": "~5.5.0|~5.6.0|~5.7.0",
-                "illuminate/support": "~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/config": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/database": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
                 "php": "^7.1",
                 "spatie/string": "^2.1"
             },
             "require-dev": {
-                "orchestra/testbench": "~3.5.0|~3.6.0|~3.7.0",
-                "phpunit/phpunit": "^7.4"
+                "ext-json": "*",
+                "orchestra/testbench": "~3.5.0|~3.6.0|~3.7.0|~3.8.0",
+                "phpunit/phpunit": "^7.4 | ^8.0",
+                "scrutinizer/ocular": "^1.5"
             },
             "type": "library",
             "extra": {
@@ -3349,31 +3315,31 @@
                 "spatie",
                 "user"
             ],
-            "time": "2019-02-01T21:44:15+00:00"
+            "time": "2019-02-27T12:41:17+00:00"
         },
         {
             "name": "spatie/laravel-medialibrary",
-            "version": "7.5.5",
+            "version": "7.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-medialibrary.git",
-                "reference": "a50e59d1eec7c2e161942ffd0d13860759e4760d"
+                "reference": "6ffb8a41e60f024abd35ff47e08628354d6efd0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/a50e59d1eec7c2e161942ffd0d13860759e4760d",
-                "reference": "a50e59d1eec7c2e161942ffd0d13860759e4760d",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/6ffb8a41e60f024abd35ff47e08628354d6efd0e",
+                "reference": "6ffb8a41e60f024abd35ff47e08628354d6efd0e",
                 "shasum": ""
             },
             "require": {
-                "illuminate/bus": "~5.5.0|~5.6.0|~5.7.0",
-                "illuminate/console": "~5.5.0|~5.6.0|~5.7.0",
-                "illuminate/database": "~5.5.0|~5.6.0|~5.7.0",
-                "illuminate/pipeline": "~5.5.0|~5.6.0|~5.7.0",
-                "illuminate/support": "~5.5.0|~5.6.0|~5.7.0",
+                "illuminate/bus": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/console": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/database": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/pipeline": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
                 "league/flysystem": "^1.0.8",
                 "maennchen/zipstream-php": "~0.4",
-                "php": "^7.1",
+                "php": "^7.2",
                 "spatie/image": "^1.4.0",
                 "spatie/pdf-to-image": "^1.2",
                 "spatie/temporary-directory": "^1.1"
@@ -3387,9 +3353,9 @@
                 "guzzlehttp/guzzle": "^6.3",
                 "league/flysystem-aws-s3-v3": "^1.0.13",
                 "mockery/mockery": "^1.0.0",
-                "orchestra/testbench": "~3.5.0|~3.6.0|~3.7.0",
-                "phpunit/phpunit": "^7.0",
-                "spatie/phpunit-snapshot-assertions": "^1.2"
+                "orchestra/testbench": "~3.8.0",
+                "phpunit/phpunit": "^8.0",
+                "spatie/phpunit-snapshot-assertions": "^2.0"
             },
             "suggest": {
                 "league/flysystem-aws-s3-v3": "Required to use AWS S3 file storage",
@@ -3432,33 +3398,33 @@
                 "media",
                 "spatie"
             ],
-            "time": "2019-01-05T14:06:46+00:00"
+            "time": "2019-02-27T09:31:55+00:00"
         },
         {
             "name": "spatie/laravel-menu",
-            "version": "3.2.1",
+            "version": "3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-menu.git",
-                "reference": "d07c0bcaf755ac7f35ea797ba99f226f2132d4e0"
+                "reference": "235eaf5aad88f4f7f76862ae9d8aa768be76626d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-menu/zipball/d07c0bcaf755ac7f35ea797ba99f226f2132d4e0",
-                "reference": "d07c0bcaf755ac7f35ea797ba99f226f2132d4e0",
+                "url": "https://api.github.com/repos/spatie/laravel-menu/zipball/235eaf5aad88f4f7f76862ae9d8aa768be76626d",
+                "reference": "235eaf5aad88f4f7f76862ae9d8aa768be76626d",
                 "shasum": ""
             },
             "require": {
-                "illuminate/auth": "~5.5.40|~5.6.0|~5.7.0",
-                "illuminate/contracts": "~5.5.40|~5.6.0|~5.7.0",
-                "illuminate/support": "~5.5.40|~5.6.0|~5.7.0",
-                "php": "^7.0",
+                "illuminate/auth": "~5.5.40|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/contracts": "~5.5.40|~5.6.0|~5.7.0|~5.8.0",
+                "illuminate/support": "~5.5.40|~5.6.0|~5.7.0|~5.8.0",
+                "php": "^7.1",
                 "spatie/menu": "^2.2.2"
             },
             "require-dev": {
                 "fzaninotto/faker": "^1.6",
                 "orchestra/testbench": "~3.5.0|~3.6.0|~3.7.0",
-                "phpunit/phpunit": "^6.0|^7.0"
+                "phpunit/phpunit": "^7.0|^8.0"
             },
             "type": "library",
             "extra": {
@@ -3494,20 +3460,20 @@
                 "laravel-menu",
                 "spatie"
             ],
-            "time": "2018-09-10T12:19:41+00:00"
+            "time": "2019-02-27T12:08:18+00:00"
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "2.33.0",
+            "version": "2.34.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "9da0a1618b0c85f71ef7e11b942d5f6f92d2c063"
+                "reference": "10f6b2e19cce79936e42b65f08549cbf564c052e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/9da0a1618b0c85f71ef7e11b942d5f6f92d2c063",
-                "reference": "9da0a1618b0c85f71ef7e11b942d5f6f92d2c063",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/10f6b2e19cce79936e42b65f08549cbf564c052e",
+                "reference": "10f6b2e19cce79936e42b65f08549cbf564c052e",
                 "shasum": ""
             },
             "require": {
@@ -3559,7 +3525,7 @@
                 "security",
                 "spatie"
             ],
-            "time": "2019-02-20T15:56:22+00:00"
+            "time": "2019-02-26T21:25:08+00:00"
         },
         {
             "name": "spatie/laravel-translatable",
@@ -7685,7 +7651,6 @@
         "oxygencms/menus": 20,
         "oxygencms/pages": 20,
         "oxygencms/phrases": 20,
-        "oxygencms/uploads": 20,
         "oxygencms/users": 20
     },
     "prefer-stable": true,
