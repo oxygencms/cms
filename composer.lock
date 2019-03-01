@@ -2242,16 +2242,16 @@
         },
         {
             "name": "oxygencms/core",
-            "version": "v0.3.1",
+            "version": "v0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oxygencms/core.git",
-                "reference": "0f7c38792837ae539ea5d056bd1a56161c6cb3af"
+                "reference": "08c7ace1f56f2a8f21573c26a4fe6dd94b63946b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/core/zipball/0f7c38792837ae539ea5d056bd1a56161c6cb3af",
-                "reference": "0f7c38792837ae539ea5d056bd1a56161c6cb3af",
+                "url": "https://api.github.com/repos/oxygencms/core/zipball/08c7ace1f56f2a8f21573c26a4fe6dd94b63946b",
+                "reference": "08c7ace1f56f2a8f21573c26a4fe6dd94b63946b",
                 "shasum": ""
             },
             "require": {
@@ -2292,7 +2292,7 @@
                 }
             ],
             "description": "Oxygen CMS core package.",
-            "time": "2019-02-28T21:58:31+00:00"
+            "time": "2019-03-01T15:49:54+00:00"
         },
         {
             "name": "oxygencms/menus",
@@ -2390,16 +2390,16 @@
         },
         {
             "name": "oxygencms/phrases",
-            "version": "v0.2.13",
+            "version": "v0.2.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oxygencms/phrases.git",
-                "reference": "59729b4cbf2dbdffd9e62b8f8f13bc4b5c37bd07"
+                "reference": "f087552f6fe827ae21886dd20adf6bbab846a1ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oxygencms/phrases/zipball/59729b4cbf2dbdffd9e62b8f8f13bc4b5c37bd07",
-                "reference": "59729b4cbf2dbdffd9e62b8f8f13bc4b5c37bd07",
+                "url": "https://api.github.com/repos/oxygencms/phrases/zipball/f087552f6fe827ae21886dd20adf6bbab846a1ea",
+                "reference": "f087552f6fe827ae21886dd20adf6bbab846a1ea",
                 "shasum": ""
             },
             "type": "library",
@@ -2430,7 +2430,7 @@
                 }
             ],
             "description": "Oxygen CMS phrases package.",
-            "time": "2019-02-26T18:18:51+00:00"
+            "time": "2019-03-01T16:02:16+00:00"
         },
         {
             "name": "oxygencms/users",
