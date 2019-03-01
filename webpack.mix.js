@@ -11,6 +11,9 @@ const mix = require('laravel-mix');
  |
  */
 
+ // content blocks styles (used for the TinyMCE editor in the backoffice)
+mix.sass('resources/scss/_blocks.scss', 'css');
+
 // Front
 mix.js('resources/js/app.js', 'js')
     .sass('resources/scss/app.scss', 'css');

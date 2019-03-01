@@ -4,6 +4,16 @@
     "keywords": ["framework", "laravel", "cms"],
     "license": "MIT",
     "type": "project",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./oxygencms/blocks"
+        },
+        {
+            "type": "path",
+            "url": "./oxygencms/core"
+        }
+    ],
     "require": {
         "php": "^7.2",
         "codezero/laravel-unique-translation": "^1.1",
