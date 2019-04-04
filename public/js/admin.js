@@ -85120,11 +85120,12 @@ var MediaUploads = {
 
 
                                                     formData.append('file', file);
+
                                                     formData.append('mediable_type', _this.$props.mediable_type);
                                                     formData.append('mediable_id', _this.$props.mediable_id);
 
                                                     _context.next = 6;
-                                                    return axios.post('/admin/media', formData).then(function (response) {
+                                                    return axios.post(_this.url.create, formData).then(function (response) {
                                                         _this.uploads.push(response.data.media);
                                                         _this.$parent.notify('Successfully uploaded ' + file.name, 'success');
                                                     }).catch(function (errors) {
