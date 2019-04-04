@@ -85076,7 +85076,8 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 var MediaUploads = {
     name: 'media-uploads',
-    props: ['create_url', 'update_url', 'delete_url', 'mediable_type', 'mediable_id', 'media', 'media_collections'],
+    props: ['create_url', 'update_url', 'delete_url', 'mediable_type', 'mediable_id', 'session_temporary_id', 'media', 'media_collections'],
+
     data: function data() {
         return {
             files: [],
@@ -85088,7 +85089,8 @@ var MediaUploads = {
                 update: this.$props.update_url !== undefined ? this.$props.update_url : '/admin/media',
                 delete: this.$props.delete_url !== undefined ? this.$props.delete_url : '/admin/media'
             },
-            modal_media: {}
+            modal_media: {},
+            temporary_id: this.$props.session_temporary_id
         };
     },
 
@@ -85109,7 +85111,29 @@ var MediaUploads = {
                                 this.$refs.filesInput.disabled = true;
                                 this.input_label = 'Working, please wait!';
 
-                                // store the files synchronously
+                                if (!(!this.$props.mediable_id && !this.temporary_id)) {
+                                    _context2.next = 8;
+                                    break;
+                                }
+
+                                _context2.next = 6;
+                                return __WEBPACK_IMPORTED_MODULE_1__requests__["a" /* default */].axios.get('/admin/media/temporary').then(function (response) {
+                                    _this.temporary_id = response.data.id;
+                                    _this.setHiddenInput();
+                                }).catch(function (errors) {
+                                    return console.log(errors.response, 'Failed to create temporary model');
+                                });
+
+                            case 6:
+                                _context2.next = 9;
+                                break;
+
+                            case 8:
+                                if (this.temporary_id) {
+                                    this.setHiddenInput();
+                                }
+
+                            case 9:
                                 _loop = /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _loop(file) {
                                     var formData;
                                     return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _loop$(_context) {
@@ -85120,9 +85144,8 @@ var MediaUploads = {
 
 
                                                     formData.append('file', file);
-
-                                                    formData.append('mediable_type', _this.$props.mediable_type);
-                                                    formData.append('mediable_id', _this.$props.mediable_id);
+                                                    formData.append('mediable_type', _this.mediableType);
+                                                    formData.append('mediable_id', _this.mediableId);
 
                                                     _context.next = 6;
                                                     return axios.post(_this.url.create, formData).then(function (response) {
@@ -85139,61 +85162,62 @@ var MediaUploads = {
                                         }
                                     }, _loop, _this);
                                 });
+                                // store the files synchronously
                                 _iteratorNormalCompletion = true;
                                 _didIteratorError = false;
                                 _iteratorError = undefined;
-                                _context2.prev = 7;
+                                _context2.prev = 13;
                                 _iterator = this.files[Symbol.iterator]();
 
-                            case 9:
+                            case 15:
                                 if (_iteratorNormalCompletion = (_step = _iterator.next()).done) {
-                                    _context2.next = 15;
+                                    _context2.next = 21;
                                     break;
                                 }
 
                                 file = _step.value;
-                                return _context2.delegateYield(_loop(file), 't0', 12);
+                                return _context2.delegateYield(_loop(file), 't0', 18);
 
-                            case 12:
+                            case 18:
                                 _iteratorNormalCompletion = true;
-                                _context2.next = 9;
+                                _context2.next = 15;
                                 break;
 
-                            case 15:
-                                _context2.next = 21;
+                            case 21:
+                                _context2.next = 27;
                                 break;
 
-                            case 17:
-                                _context2.prev = 17;
-                                _context2.t1 = _context2['catch'](7);
+                            case 23:
+                                _context2.prev = 23;
+                                _context2.t1 = _context2['catch'](13);
                                 _didIteratorError = true;
                                 _iteratorError = _context2.t1;
 
-                            case 21:
-                                _context2.prev = 21;
-                                _context2.prev = 22;
+                            case 27:
+                                _context2.prev = 27;
+                                _context2.prev = 28;
 
                                 if (!_iteratorNormalCompletion && _iterator.return) {
                                     _iterator.return();
                                 }
 
-                            case 24:
-                                _context2.prev = 24;
+                            case 30:
+                                _context2.prev = 30;
 
                                 if (!_didIteratorError) {
-                                    _context2.next = 27;
+                                    _context2.next = 33;
                                     break;
                                 }
 
                                 throw _iteratorError;
 
-                            case 27:
-                                return _context2.finish(24);
+                            case 33:
+                                return _context2.finish(30);
 
-                            case 28:
-                                return _context2.finish(21);
+                            case 34:
+                                return _context2.finish(27);
 
-                            case 29:
+                            case 35:
 
                                 // enable the input
                                 this.$refs.filesInput.disabled = false;
@@ -85201,12 +85225,12 @@ var MediaUploads = {
 
                                 this.files = [];
 
-                            case 32:
+                            case 38:
                             case 'end':
                                 return _context2.stop();
                         }
                     }
-                }, _callee, this, [[7, 17, 21, 29], [22,, 24, 28]]);
+                }, _callee, this, [[13, 23, 27, 35], [28,, 30, 34]]);
             }));
 
             function storeMedia() {
@@ -85267,6 +85291,30 @@ var MediaUploads = {
                 button.disabled = true;
                 button.textContent = 'Working, please wait!';
             }
+        },
+        setHiddenInput: function setHiddenInput() {
+            var input = document.createElement('input');
+            input.name = 'temporary_id';
+            input.type = 'hidden';
+            input.value = this.temporary_id;
+            document.querySelector('main form').appendChild(input);
+        }
+    },
+
+    computed: {
+        mediableType: function mediableType() {
+            if (this.$props.mediable_type) {
+                return this.$props.mediable_type;
+            }
+
+            return 'Oxygencms\\Core\\Models\\Temporary';
+        },
+        mediableId: function mediableId() {
+            if (this.$props.mediable_id) {
+                return this.$props.mediable_id;
+            }
+
+            return this.temporary_id;
         }
     }
 };
