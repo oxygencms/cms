@@ -85090,20 +85090,71 @@ var MediaUploads = {
                 delete: this.$props.delete_url !== undefined ? this.$props.delete_url : '/admin/media'
             },
             modal_media: {},
-            temporary_id: 0
+            temporary_id: null
         };
     },
 
+    mounted: function mounted() {
+        this.$nextTick(function () {
+            // check for temporary model previously created
+            this.temporary_id = window.localStorage.getItem('temporary_media_id');
+
+            if (this.temporary_id) {
+                this.setHiddenInput();
+
+                this.getTemporaryMedia();
+            }
+        });
+    },
+
     methods: {
-        storeMedia: function () {
+        getTemporaryMedia: function () {
             var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
                 var _this = this;
 
+                return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                if (this.$props.mediable_id) {
+                                    _context.next = 3;
+                                    break;
+                                }
+
+                                _context.next = 3;
+                                return __WEBPACK_IMPORTED_MODULE_1__requests__["a" /* default */].axios.get('/admin/media/temporary/' + this.temporary_id).then(function (response) {
+                                    return _this.uploads = response.data;
+                                }).catch(function (errors) {
+                                    window.localStorage.removeItem('temporary_media_id');
+
+                                    _this.temporary_id = null;
+
+                                    console.log("Couldn't fetch the temporary media.", errors.response);
+                                });
+
+                            case 3:
+                            case 'end':
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, this);
+            }));
+
+            function getTemporaryMedia() {
+                return _ref.apply(this, arguments);
+            }
+
+            return getTemporaryMedia;
+        }(),
+        storeMedia: function () {
+            var _ref2 = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee2() {
+                var _this2 = this;
+
                 var _loop, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, file;
 
-                return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context2) {
+                return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee2$(_context3) {
                     while (1) {
-                        switch (_context2.prev = _context2.next) {
+                        switch (_context3.prev = _context3.next) {
                             case 0:
                                 this.files = Array.from(this.$refs.filesInput.files);
 
@@ -85112,14 +85163,15 @@ var MediaUploads = {
                                 this.input_label = 'Working, please wait!';
 
                                 if (!(!this.$props.mediable_id && !this.temporary_id)) {
-                                    _context2.next = 6;
+                                    _context3.next = 6;
                                     break;
                                 }
 
-                                _context2.next = 6;
-                                return __WEBPACK_IMPORTED_MODULE_1__requests__["a" /* default */].axios.get('/admin/media/temporary').then(function (response) {
-                                    _this.temporary_id = response.data.id;
-                                    _this.setHiddenInput();
+                                _context3.next = 6;
+                                return __WEBPACK_IMPORTED_MODULE_1__requests__["a" /* default */].axios.post('/admin/media/temporary').then(function (response) {
+                                    _this2.temporary_id = response.data.id;
+                                    _this2.setHiddenInput();
+                                    window.localStorage.setItem('temporary_media_id', _this2.temporary_id);
                                 }).catch(function (errors) {
                                     return console.log(errors.response, 'Failed to create temporary model');
                                 });
@@ -85127,31 +85179,31 @@ var MediaUploads = {
                             case 6:
                                 _loop = /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _loop(file) {
                                     var formData;
-                                    return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _loop$(_context) {
+                                    return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _loop$(_context2) {
                                         while (1) {
-                                            switch (_context.prev = _context.next) {
+                                            switch (_context2.prev = _context2.next) {
                                                 case 0:
                                                     formData = new FormData();
 
 
                                                     formData.append('file', file);
-                                                    formData.append('mediable_type', _this.mediableType);
-                                                    formData.append('mediable_id', _this.mediableId);
+                                                    formData.append('mediable_type', _this2.mediableType);
+                                                    formData.append('mediable_id', _this2.mediableId);
 
-                                                    _context.next = 6;
-                                                    return axios.post(_this.url.create, formData).then(function (response) {
-                                                        _this.uploads.push(response.data.media);
-                                                        _this.$parent.notify('Successfully uploaded ' + file.name, 'success');
+                                                    _context2.next = 6;
+                                                    return axios.post(_this2.url.create, formData).then(function (response) {
+                                                        _this2.uploads.push(response.data.media);
+                                                        _this2.$parent.notify('Successfully uploaded ' + file.name, 'success');
                                                     }).catch(function (errors) {
-                                                        return _this.handleFailure(errors, file, 'Failed to upload');
+                                                        return _this2.handleFailure(errors, file, 'Failed to upload');
                                                     });
 
                                                 case 6:
                                                 case 'end':
-                                                    return _context.stop();
+                                                    return _context2.stop();
                                             }
                                         }
-                                    }, _loop, _this);
+                                    }, _loop, _this2);
                                 });
 
 
@@ -85159,56 +85211,56 @@ var MediaUploads = {
                                 _iteratorNormalCompletion = true;
                                 _didIteratorError = false;
                                 _iteratorError = undefined;
-                                _context2.prev = 10;
+                                _context3.prev = 10;
                                 _iterator = this.files[Symbol.iterator]();
 
                             case 12:
                                 if (_iteratorNormalCompletion = (_step = _iterator.next()).done) {
-                                    _context2.next = 18;
+                                    _context3.next = 18;
                                     break;
                                 }
 
                                 file = _step.value;
-                                return _context2.delegateYield(_loop(file), 't0', 15);
+                                return _context3.delegateYield(_loop(file), 't0', 15);
 
                             case 15:
                                 _iteratorNormalCompletion = true;
-                                _context2.next = 12;
+                                _context3.next = 12;
                                 break;
 
                             case 18:
-                                _context2.next = 24;
+                                _context3.next = 24;
                                 break;
 
                             case 20:
-                                _context2.prev = 20;
-                                _context2.t1 = _context2['catch'](10);
+                                _context3.prev = 20;
+                                _context3.t1 = _context3['catch'](10);
                                 _didIteratorError = true;
-                                _iteratorError = _context2.t1;
+                                _iteratorError = _context3.t1;
 
                             case 24:
-                                _context2.prev = 24;
-                                _context2.prev = 25;
+                                _context3.prev = 24;
+                                _context3.prev = 25;
 
                                 if (!_iteratorNormalCompletion && _iterator.return) {
                                     _iterator.return();
                                 }
 
                             case 27:
-                                _context2.prev = 27;
+                                _context3.prev = 27;
 
                                 if (!_didIteratorError) {
-                                    _context2.next = 30;
+                                    _context3.next = 30;
                                     break;
                                 }
 
                                 throw _iteratorError;
 
                             case 30:
-                                return _context2.finish(27);
+                                return _context3.finish(27);
 
                             case 31:
-                                return _context2.finish(24);
+                                return _context3.finish(24);
 
                             case 32:
 
@@ -85220,14 +85272,14 @@ var MediaUploads = {
 
                             case 35:
                             case 'end':
-                                return _context2.stop();
+                                return _context3.stop();
                         }
                     }
-                }, _callee, this, [[10, 20, 24, 32], [25,, 27, 31]]);
+                }, _callee2, this, [[10, 20, 24, 32], [25,, 27, 31]]);
             }));
 
             function storeMedia() {
-                return _ref.apply(this, arguments);
+                return _ref2.apply(this, arguments);
             }
 
             return storeMedia;
@@ -85237,36 +85289,36 @@ var MediaUploads = {
             $('#edit-media').modal('show');
         },
         updateMedia: function updateMedia(media) {
-            var _this2 = this;
+            var _this3 = this;
 
             this.toggleUpdateButton(false);
 
             __WEBPACK_IMPORTED_MODULE_1__requests__["a" /* default */].axios.patch(this.url.update + '/' + media.id, media).then(function (response) {
-                var original = _this2.uploads.find(function (m) {
+                var original = _this3.uploads.find(function (m) {
                     return m.id === media.id;
                 });
 
                 original.name = media.name;
                 original.collection_name = media.collection_name;
 
-                _this2.toggleUpdateButton(true);
+                _this3.toggleUpdateButton(true);
 
-                _this2.$parent.notify('Successfully updated ' + media.name, 'success');
+                _this3.$parent.notify('Successfully updated ' + media.name, 'success');
 
                 $('#edit-media').modal('hide');
             }).catch(function (errors) {
-                _this2.handleFailure(errors, media, 'Failed to update');
-                _this2.toggleUpdateButton(true);
+                _this3.handleFailure(errors, media, 'Failed to update');
+                _this3.toggleUpdateButton(true);
             });
         },
         deleteMedia: function deleteMedia(media) {
-            var _this3 = this;
+            var _this4 = this;
 
             __WEBPACK_IMPORTED_MODULE_1__requests__["a" /* default */].axios.delete(this.url.delete + '/' + media.id).then(function (response) {
-                _this3.uploads.splice(_this3.uploads.indexOf(media), 1);
-                _this3.$parent.notify('Successfully delete ' + media.name, 'success');
+                _this4.uploads.splice(_this4.uploads.indexOf(media), 1);
+                _this4.$parent.notify('Successfully delete ' + media.name, 'success');
             }).catch(function (errors) {
-                return _this3.handleFailure(errors, media, 'Failed to delete');
+                return _this4.handleFailure(errors, media, 'Failed to delete');
             });
         },
         handleFailure: function handleFailure(errors, media, message) {

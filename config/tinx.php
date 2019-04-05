@@ -8,6 +8,7 @@ return [
     'model_paths' => [
         '/app',
         '/app/Models/*',
+        '/vendor/oxygencms/core/src/Models/*',
         '/vendor/oxygencms/blocks/src/Models/*',
         '/vendor/oxygencms/menus/src/Models/*',
         '/vendor/oxygencms/pages/src/Models/*',
@@ -21,7 +22,6 @@ return [
      * Only define these models (all other models will be ignored).
      * */
     'only' => [
-        // 'App\OnlyThisModel',
         // 'App\AlsoOnlyThisModel',
     ],
 
