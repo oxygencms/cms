@@ -85076,7 +85076,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 var MediaUploads = {
     name: 'media-uploads',
-    props: ['create_url', 'update_url', 'delete_url', 'mediable_type', 'mediable_id', 'session_temporary_id', 'media', 'media_collections'],
+    props: ['create_url', 'update_url', 'delete_url', 'mediable_type', 'mediable_id', 'media', 'media_collections'],
 
     data: function data() {
         return {
@@ -85090,7 +85090,7 @@ var MediaUploads = {
                 delete: this.$props.delete_url !== undefined ? this.$props.delete_url : '/admin/media'
             },
             modal_media: {},
-            temporary_id: this.$props.session_temporary_id
+            temporary_id: 0
         };
     },
 
@@ -85112,7 +85112,7 @@ var MediaUploads = {
                                 this.input_label = 'Working, please wait!';
 
                                 if (!(!this.$props.mediable_id && !this.temporary_id)) {
-                                    _context2.next = 8;
+                                    _context2.next = 6;
                                     break;
                                 }
 
@@ -85125,15 +85125,6 @@ var MediaUploads = {
                                 });
 
                             case 6:
-                                _context2.next = 9;
-                                break;
-
-                            case 8:
-                                if (this.temporary_id) {
-                                    this.setHiddenInput();
-                                }
-
-                            case 9:
                                 _loop = /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _loop(file) {
                                     var formData;
                                     return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _loop$(_context) {
@@ -85162,62 +85153,64 @@ var MediaUploads = {
                                         }
                                     }, _loop, _this);
                                 });
+
+
                                 // store the files synchronously
                                 _iteratorNormalCompletion = true;
                                 _didIteratorError = false;
                                 _iteratorError = undefined;
-                                _context2.prev = 13;
+                                _context2.prev = 10;
                                 _iterator = this.files[Symbol.iterator]();
 
-                            case 15:
+                            case 12:
                                 if (_iteratorNormalCompletion = (_step = _iterator.next()).done) {
-                                    _context2.next = 21;
+                                    _context2.next = 18;
                                     break;
                                 }
 
                                 file = _step.value;
-                                return _context2.delegateYield(_loop(file), 't0', 18);
+                                return _context2.delegateYield(_loop(file), 't0', 15);
+
+                            case 15:
+                                _iteratorNormalCompletion = true;
+                                _context2.next = 12;
+                                break;
 
                             case 18:
-                                _iteratorNormalCompletion = true;
-                                _context2.next = 15;
+                                _context2.next = 24;
                                 break;
 
-                            case 21:
-                                _context2.next = 27;
-                                break;
-
-                            case 23:
-                                _context2.prev = 23;
-                                _context2.t1 = _context2['catch'](13);
+                            case 20:
+                                _context2.prev = 20;
+                                _context2.t1 = _context2['catch'](10);
                                 _didIteratorError = true;
                                 _iteratorError = _context2.t1;
 
-                            case 27:
-                                _context2.prev = 27;
-                                _context2.prev = 28;
+                            case 24:
+                                _context2.prev = 24;
+                                _context2.prev = 25;
 
                                 if (!_iteratorNormalCompletion && _iterator.return) {
                                     _iterator.return();
                                 }
 
-                            case 30:
-                                _context2.prev = 30;
+                            case 27:
+                                _context2.prev = 27;
 
                                 if (!_didIteratorError) {
-                                    _context2.next = 33;
+                                    _context2.next = 30;
                                     break;
                                 }
 
                                 throw _iteratorError;
 
-                            case 33:
-                                return _context2.finish(30);
-
-                            case 34:
+                            case 30:
                                 return _context2.finish(27);
 
-                            case 35:
+                            case 31:
+                                return _context2.finish(24);
+
+                            case 32:
 
                                 // enable the input
                                 this.$refs.filesInput.disabled = false;
@@ -85225,12 +85218,12 @@ var MediaUploads = {
 
                                 this.files = [];
 
-                            case 38:
+                            case 35:
                             case 'end':
                                 return _context2.stop();
                         }
                     }
-                }, _callee, this, [[13, 23, 27, 35], [28,, 30, 34]]);
+                }, _callee, this, [[10, 20, 24, 32], [25,, 27, 31]]);
             }));
 
             function storeMedia() {
