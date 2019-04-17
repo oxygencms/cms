@@ -14,13 +14,13 @@
         "laravel/socialite": "^3.0",
         "laravel/tinker": "^1.0",
         "orangehill/iseed": "^2.5",
-        "oxygencms/core": "0.3.*",
+        "oxygencms/core": "0.4.*",
         "oxygencms/blocks": "0.3.*",
         "oxygencms/commands": "0.2.*",
         "oxygencms/menus": "0.3.*",
         "oxygencms/pages": "0.3.*",
         "oxygencms/phrases": "0.2.*",
-        "oxygencms/users": "0.3.*",
+        "oxygencms/users": "0.4.*",
         "predis/predis": "^1.1"
     },
     "require-dev": {
